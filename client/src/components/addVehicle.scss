@@ -1,0 +1,50 @@
+.vehicleCreate {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-self: center;
+  padding: 40px;
+  background: #f9f9f9;
+  margin: 30px;
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  @media only screen and (max-width: 899px){
+   max-width: 80vw;
+  }
+ 
+   & input, & textarea {
+    border: none;
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+   }
+ 
+   & textarea {
+    height: 100px;
+   }
+ 
+ }
+ 
+ .submit-button{
+  background: #3277a8;
+  padding: 20px 30px;
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1px solid transparent;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
+ 
+   &:hover {
+    background: #32a898;
+    color:#333;
+    border: 1px solid #fff;
+   }
+ 
+ }
