@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACb,KAAK,EAAE,IAAI;EACX,KAAK,EAAE,GAAG;EACV,YAAY,EAAE,EAAE;CAIlB;;AAPD,AAIG,eAJY,CAIZ,GAAG,CAAA;EACD,KAAK,EAAE,IACT;CAAC",
+    "sources": [
+        "ShowVehicle.scss"
+    ],
+    "names": [],
+    "file": "ShowVehicle.css"
+}

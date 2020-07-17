@@ -1,0 +1,10 @@
+.vehicle--image {
+  float: left;
+  width: 23%;
+  margin-right: 2%;
+}
+
+.vehicle--image img {
+  width: 100%;
+}
+/*# sourceMappingURL=ShowVehicle.css.map */

@@ -1,4 +1,4 @@
-# Vehicle-Stats-1.0
+# Vehicle-Stats-2.0
 ## Overview
 
 Vehicle Stats 1.0 will show new car lovers or motorcycle lovers their favorite vehicle stats, they can show also different model types, engine types and much more! 
