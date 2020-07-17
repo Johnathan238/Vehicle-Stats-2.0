@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router'
 import './addVehicle.scss'
 import { withRouter } from 'react-router-dom'
-// import { getVehicles, addVehicles} from '../services/apihelper'
+import { getVehicles, addVehicles} from '../services/apihelper'
 
 
  class AddVehicle extends Component {
@@ -10,45 +10,45 @@ import { withRouter } from 'react-router-dom'
     super()
     this.state = {
       vehicles: null,
-      addVehicle: false,
+      addVehicles: false,
       vehicle: {
         color: ''
       }
     }
   }
    
-  //  componentDidMount = async () => {
-  //    const id = this.props.match.params.id
-  //    const vehicles = await getVehicles(id)
-  //    this.setState({
-  //      vehicles
-  //    })
-  //  }
+   componentDidMount = async () => {
+     const id = this.props.match.params.id
+     const vehicles = await getVehicles(id)
+     this.setState({
+       vehicles
+     })
+   }
 
-  //  toggleAdd = () => {
-  //    this.setState(prevState => ({
-  //      addVehicle: !prevState.addVehicle
-  //    }))
-  //  }
+   toggleAdd = () => {
+     this.setState(prevState => ({
+       addVehicles: !prevState.addVehicles
+     }))
+   }
 
-  // handleChange = (e) => {
-  //   const { color, value } = e.target
-  //   this.setState({
-  //    vehicle: {
-  //     ...this.state.vehicle,
-  //     [color]: value
-  //    }
-  //   })
-  // }
+  handleChange = (e) => {
+    const { color, value } = e.target
+    this.setState({
+     vehicle: {
+      ...this.state.vehicle,
+      [color]: value
+     }
+    })
+  }
   
-  // handleSubmit = async (e) => {
-  //   e.preventDefault()
-  //   const newVehicle = await addVehicle(this.props.match.params.id, this.state.vehicle)
-  //   console.log(newVehicle)
-  //   this.setState(prevState => ({
-  //     vehicles: [...prevState.vehicles, newVehicle]
-  //   }))
-  //  }
+  handleSubmit = async (e) => {
+    e.preventDefault()
+    const newVehicle = await addVehicles(this.props.match.params.id, this.state.vehicle)
+    console.log(newVehicle)
+    this.setState(prevState => ({
+      vehicles: [...prevState.vehicles, newVehicle]
+    }))
+   }
 
   render() {
     return (
@@ -60,7 +60,7 @@ import { withRouter } from 'react-router-dom'
             <input
               className="vehicleCreate-input"
               placeholder="Vehicle Color"
-              // value={vehicle.color}
+              value={this.state.vehicle.color}
               color='color'
               required
               autoFocus

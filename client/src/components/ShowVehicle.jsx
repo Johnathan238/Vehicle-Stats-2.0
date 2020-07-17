@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { getVehicles } from '../services/apihelper'
 import { Component } from 'react'
+import DeletleVehicle from './DeleteVehicle'
 
 export default class ShowVehicle extends Component {
   state = {
