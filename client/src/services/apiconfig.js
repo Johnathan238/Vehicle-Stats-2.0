@@ -1,4 +1,4 @@
-import api from './apiconfig'
+import axios from 'axios'
 
 let apiUrl
 
@@ -13,7 +13,7 @@ if (window.location.hostname === 'localhost') {
     apiUrl = apiUrls.production
 }
 
-const api = Axios.create({
+const api = axios.create({
     baseURL: apiUrl,
 })
 

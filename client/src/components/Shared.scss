@@ -21,6 +21,38 @@
      }  
  }
 
+ .footer {
+  background-color: #242423;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 650px){
+   height: auto;
+   padding: 10px 0 20px 0;
+  }
+  
+  
+  &--text {
+   text-align: center;
+   font-weight: bold;
+   padding-bottom: 5px;
+  }
+   &--details {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    color: #fff;
+  
+     @media only screen and (max-width: 650px){
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+     }
+   }
+  }
+
 .Login {
   width: 50vw;
   max-width: 600px;;
