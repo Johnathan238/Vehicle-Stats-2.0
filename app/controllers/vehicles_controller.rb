@@ -20,7 +20,7 @@ class VehiclesController < ApplicationController
     @vehicle.model = @model
 
     if @vehicle.save
-      render json: @vehicle, status: :created, location: @vehicle
+      render json: @vehicle, status: :created
     else
       render json: @vehicle.errors, status: :unprocessable_entity
     end
@@ -48,6 +48,6 @@ class VehiclesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def vehicle_params
-      params.require(:vehicle).permit(:color, :engine, :transmission, :year, :model_id)
+      params.require(:vehicle).permit(:color, :engine, :transmission, :year, :model_id, :url)
     end
 end

@@ -1,8 +1,23 @@
-.vehicle--image {
-   float: left;
-   width: 23%;
+.vehicle--image{
+  display: grid;
+  flex-direction: grid;
+   float: center;
+   width: 25%;
    margin-right: 2%;
-   img{
-     width: 100% 
+  background-color: #f53d90;
+  // height: 140px;
+  grid-template-columns: 25px repeat(7, 1fr) 25px;
+  grid-template-rows: 1fr;
+
+   &--img{
+     width: 90%;
    }
+
+   &--content{
+    display: flex;
+    flex-direction: column;
+   }
+
 }
+
+

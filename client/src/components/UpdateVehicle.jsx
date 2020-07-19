@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './updateVehicle.scss'
 
 
+
 export default class UpdateVehicle extends Component {
   state = {
     color: '',
@@ -25,14 +26,14 @@ export default class UpdateVehicle extends Component {
 
   setFormData = () => {
     this.setState({
-      name: this.props.addVehicle.color
+      name: this.props.addVehicle.name
     })
   }
 
   handleChange = (e) => {
     const { value } = e.target;
     this.setState({
-      color: value
+      name: value
     })
   }
 

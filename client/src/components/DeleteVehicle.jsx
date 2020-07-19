@@ -19,12 +19,7 @@ export default class DeleteVehicle extends Component {
     this.setState({ vehicles })
   }
 
-  handleVehicleDelete = async (id) => {
-    await deleteVehicles(id)
-    this.setState(prevState => ({
-      vehicles: prevState.vehicles.filter(vehicle => vehicle.id !== id)
-    }))
-  }
+ 
 
   render() {
     return (

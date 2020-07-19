@@ -1,3 +1,11 @@
+.vehicleCreate--wrapper{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+ }
+
 .vehicleCreate {
   display: flex;
   flex-direction: column;
@@ -48,3 +56,5 @@
    }
  
  }
+
+ 
