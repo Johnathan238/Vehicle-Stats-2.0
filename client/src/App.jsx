@@ -5,7 +5,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { Route, Switch } from 'react-router-dom'
 import ShowVehicle from './components/ShowVehicle'
-import AddVehicle from './components/AddVehicle'
 import UpdateVehicle from './components/UpdateVehicle';
 
 
@@ -17,9 +16,8 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/Login' component={Login} />
-        
         <Route  path='/showvehicle' component={ShowVehicle} />
-        <Route exact path='/updatevehicle' component={UpdateVehicle} />
+        <Route exact path='/vehicles/:id/updatevehicle' component={UpdateVehicle} />
       </Switch>
 
       <Footer />

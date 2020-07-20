@@ -33,12 +33,12 @@ import UpdateVehicle from './UpdateVehicle'
     }))
   }
    
-  handleVehicleUpdate = async (id, vehicleData) => {
-    const newVehicle = await putVehicle(id, vehicleData);
-    this.setState(prevState => ({
-      vehicle: prevState.vehicles.map(vehicle => vehicle.id === parseInt(id) ? newVehicle : vehicle)
-    }))
-  }
+  // handleVehicleUpdate = async (id, vehicleData) => {
+  //   const newVehicle = await putVehicle(id, vehicleData);
+  //   this.setState(prevState => ({
+  //     vehicle: prevState.vehicles.map(vehicle => vehicle.id === parseInt(id) ? newVehicle : vehicle)
+  //   }))
+  // }
 
   addNewVehicle = (newVehicle) => {
     this.setState(prevState => ({

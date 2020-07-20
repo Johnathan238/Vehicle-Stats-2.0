@@ -15,8 +15,13 @@ export const putVehicle = async (id, vehicleData) => {
   return response.data;
 }
 
-export const editVehicle = async (id, modelInfo) => {
-  const response = await api.put(`/manufacturers/1/models/1/vehicles/${id}`, { model: modelInfo })
+export const showVehicle = async (id) => {
+  const response = await api.get(`/manufacturers/1/models/1/vehicles/${id}`)
+  return response.data;
+}
+
+export const editVehicle = async (  id, modelInfo) => {
+  const response = await api.put(`/manufacturers/1/models/1/vehicles/${id}`, { vehicle: modelInfo })
   return response.data
 }
 
