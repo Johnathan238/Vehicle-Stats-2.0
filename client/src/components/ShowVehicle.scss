@@ -2,15 +2,14 @@
   display: grid;
   flex-direction: grid;
    float: center;
-   width: 25%;
+   width: 65%;
    margin-right: 2%;
   background-color: #32a898;
-  // height: 140px;
   grid-template-columns: 25px repeat(7, 1fr) 25px;
   grid-template-rows: 1fr;
 
    &--img{
-     width: 90%;
+     width: 50%;
    }
 
    &--content{
@@ -19,5 +18,73 @@
    }
 
 }
+
+.all--vehicles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.vehicles{
+  width: 25%;
+  justify-content: center;
+  
+  &--img{
+    width: 50%;
+  }
+
+}
+
+@media(max-width: 400px){
+  .vehicles{
+    max-width: 280px;
+    font-size: 18px;
+  }
+  .vehicle--image{
+    object-fit: cover;
+    max-width: 280px;
+  }
+}
+
+.edit-button{
+  background-color: #54f092;
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete-button{
+  background-color: #e34bba;
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+.edit-button:hover {opacity: 1}
+
+.delete-button:hover {opacity: 1}
 
 

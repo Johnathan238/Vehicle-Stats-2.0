@@ -6,7 +6,7 @@
       -ms-flex-direction: grid;
           flex-direction: grid;
   float: center;
-  width: 25%;
+  width: 65%;
   margin-right: 2%;
   background-color: #32a898;
   -ms-grid-columns: 25px (1fr)[7] 25px;
@@ -16,7 +16,7 @@
 }
 
 .vehicle--image--img {
-  width: 90%;
+  width: 50%;
 }
 
 .vehicle--image--content {
@@ -27,5 +27,91 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.all--vehicles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.vehicles {
+  width: 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.vehicles--img {
+  width: 50%;
+}
+
+@media (max-width: 400px) {
+  .vehicles {
+    max-width: 280px;
+    font-size: 18px;
+  }
+  .vehicle--image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 280px;
+  }
+}
+
+.edit-button {
+  background-color: #54f092;
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #e34bba;
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.edit-button:hover {
+  opacity: 1;
+}
+
+.delete-button:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=ShowVehicle.css.map */
