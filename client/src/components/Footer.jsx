@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer--details">
 
-      <marquee>
-        <div className="footer--details-container sei-developers">
+        <marquee>
+          <div className="footer--details-container sei-developers">
             <p className="footer--text">&copy; Developed by: Johnathan Umana - &copy; Developed by: Johnathan Umana - &copy; Developed by: Johnathan Umana
             - &copy; Developed by: Johnathan Umana - &copy; Developed by: Johnathan Umana - &copy; Developed by: Johnathan Umana</p>
           </div>

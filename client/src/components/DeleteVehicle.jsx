@@ -19,7 +19,7 @@ export default class DeleteVehicle extends Component {
     this.setState({ vehicles })
   }
 
- 
+
 
   render() {
     return (
@@ -30,7 +30,7 @@ export default class DeleteVehicle extends Component {
             handleVehicleDelete={this.handleVehicleDelete}
           />
         )} />
-        
+
       </>
     )
   }

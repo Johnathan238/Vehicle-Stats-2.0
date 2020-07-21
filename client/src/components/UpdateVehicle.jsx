@@ -40,66 +40,61 @@ export default class UpdateVehicle extends Component {
       <>
         <div className="vehicleEdit--container">
           <div className="vehicle-edit">
-            {/* <form onSubmit={(e) => {
-              e.preventDefault();
-              handleVehicleUpdate(id, this.state);
-              history.push('/vehicles');
-            }}> */}
             <h3>Update Vehicle</h3>
 
             <form onSubmit={this.handleSubmit} className="edit-form">
 
-            <div className="inputWrapper">
-              <label for="name">Vehicle Color:</label>
-              <input
-                type="text"
-                className="edit-input-color"
-                placeholder='Color'
-                value={this.state.color}
-                name='color'
-                required
-                autoFocus
-                onChange={this.handleChange} />
-            </div>
+              <div className="inputWrapper">
+                <label for="name">Vehicle Color:</label>
+                <input
+                  type="text"
+                  className="edit-input-color"
+                  placeholder='Color'
+                  value={this.state.color}
+                  name='color'
+                  required
+                  autoFocus
+                  onChange={this.handleChange} />
+              </div>
 
-            <div className="inputWrapper">
-              <label for="Engine">Vehicle engine:</label>
-              <input
-                className="edit-input-engine"
-                placeholder='Engine Type'
-                value={this.state.engine}
-                name='engine'
-                required
-                onChange={this.handleChange} />
-            </div>
+              <div className="inputWrapper">
+                <label for="Engine">Vehicle engine:</label>
+                <input
+                  className="edit-input-engine"
+                  placeholder='Engine Type'
+                  value={this.state.engine}
+                  name='engine'
+                  required
+                  onChange={this.handleChange} />
+              </div>
 
-            <div className="inputWrapper">
-              <label for="Transmission">Vehicle Transmission:</label>
-              <input
-                className="edit-input-transmission"
-                placeholder='Transmission'
-                value={this.state.transmission}
-                name='transmission'
-                required
-                onChange={this.handleChange} />
-            </div>
+              <div className="inputWrapper">
+                <label for="Transmission">Vehicle Transmission:</label>
+                <input
+                  className="edit-input-transmission"
+                  placeholder='Transmission'
+                  value={this.state.transmission}
+                  name='transmission'
+                  required
+                  onChange={this.handleChange} />
+              </div>
 
-            <div className="inputWrapper">
-              <label for="imgURL">Vehicle image link:</label>
-              <input
-                className="edit-input-image-link"
-                placeholder='Image Link'
-                value={this.state.url}
-                name='url'
-                required
-                onChange={this.handleChange} />
-            </div>
+              <div className="inputWrapper">
+                <label for="imgURL">Vehicle image link:</label>
+                <input
+                  className="edit-input-image-link"
+                  placeholder='Image Link'
+                  value={this.state.url}
+                  name='url'
+                  required
+                  onChange={this.handleChange} />
+              </div>
 
-            <button type='submit' className="submit-button">Submit Please!</button>
+              <button type='submit' className="submit-button">Submit Please!</button>
 
             </form>
+          </div>
         </div>
-      </div>
       </>
     )
   }

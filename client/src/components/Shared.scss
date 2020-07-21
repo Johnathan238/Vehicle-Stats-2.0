@@ -13,6 +13,10 @@
   // padding: 10px;
 }
 
+.Home-Link {
+  margin-left: 20%;
+}
+
 
 .nav {
   grid-column: 2;
@@ -29,6 +33,10 @@
   a:first-child {
     margin-right: 20px;
   }
+}
+
+a{
+  text-decoration: none;
 }
 
 .footer {

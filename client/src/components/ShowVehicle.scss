@@ -1,21 +1,21 @@
-.vehicle--image{
+.vehicle--image {
   display: grid;
   flex-direction: grid;
-   float: center;
-   width: 65%;
-   margin-right: 2%;
+  float: center;
+  width: 65%;
+  margin-right: 2%;
   background-color: #32a898;
   grid-template-columns: 25px repeat(7, 1fr) 25px;
   grid-template-rows: 1fr;
 
-   &--img{
-     width: 50%;
-   }
+  &--img {
+    width: 50%;
+  }
 
-   &--content{
+  &--content {
     display: flex;
     flex-direction: column;
-   }
+  }
 
 }
 
@@ -25,28 +25,29 @@
   flex-direction: row;
 }
 
-.vehicles{
+.vehicles {
   width: 25%;
   justify-content: center;
-  
-  &--img{
+
+  &--img {
     width: 50%;
   }
 
 }
 
-@media(max-width: 400px){
-  .vehicles{
+@media(max-width: 400px) {
+  .vehicles {
     max-width: 280px;
     font-size: 18px;
   }
-  .vehicle--image{
+
+  .vehicle--image {
     object-fit: cover;
     max-width: 280px;
   }
 }
 
-.edit-button{
+.edit-button {
   background-color: #54f092;
   border: none;
   color: black;
@@ -60,9 +61,13 @@
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+
+  @media only screen and (max-width: 650px) {
+    width: 80vw;
+  }
 }
 
-.delete-button{
+.delete-button {
   background-color: #e34bba;
   border: none;
   color: black;
@@ -76,15 +81,22 @@
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
+
+  @media only screen and (max-width: 650px) {
+    width: 80vw;
+  }
 }
-.button-container{
+
+.button-container {
   display: flex;
   justify-content: center;
 }
 
 
-.edit-button:hover {opacity: 1}
+.edit-button:hover {
+  opacity: 1
+}
 
-.delete-button:hover {opacity: 1}
-
-
+.delete-button:hover {
+  opacity: 1
+}
