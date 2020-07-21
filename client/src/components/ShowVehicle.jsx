@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Route, withRouter } from 'react-router-dom'
 import AddVehicle from './AddVehicle'
-import { getVehicles, deleteVehicles, getModels, getManufacturers, putVehicle } from '../services/apihelper'
+import { getVehicles, deleteVehicles, getModels, getManufacturers } from '../services/apihelper'
 import { Component } from 'react'
 import './ShowVehicle.scss'
 import UpdateVehicle from './UpdateVehicle'
@@ -26,7 +26,6 @@ class ShowVehicle extends Component {
 
 
   handleVehicleDelete = async (id) => {
-    console.log("hello")
     await deleteVehicles(id)
     this.setState(prevState => ({
       vehicles: prevState.vehicles.filter(vehicle => vehicle.id !== id)

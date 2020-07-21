@@ -1,15 +1,14 @@
+
 .vehicle--image {
   display: grid;
   flex-direction: grid;
   width: 65%;
   margin-right: 2%;
-  background-color: #32a898;
+  padding-left: 5%;
+  background-color: #5295ffe0;
   grid-template-columns: 25px repeat(7, 1fr) 25px;
   grid-template-rows: 1fr;
 
-  // &--img {
-  //   width: 20%;
-  // }
 
   &--content {
     display: flex;
@@ -18,35 +17,44 @@
 
 }
 
+h3 {
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #5295ffe0;
+  font-size: 40px;
+}
+
 .all--vehicles {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
 }
 
 .vehicles {
-  width: 25%;
+  width: 28%;
+  padding-left: 20%;
   justify-content: center;
 
   &--img {
-    width: 20%;
+    width: 25%;
   }
 }
 
-// @media(max-width: 400px) {
-//   .vehicles {
-//     max-width: 280px;
-//     font-size: 18px;
-//   }
-
-//   .vehicle--image {
-//     object-fit: cover;
-//     max-width: 280px;
-//   }
-// }
+.vehicle--content {
+  color: pink;
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  border-color: powderblue;
+}
 
 .edit-button {
-  background-color: #54f092;
+  background-color: #5295ffe0;
   border: none;
   color: black;
   padding: 3px 10px;
@@ -60,9 +68,6 @@
   text-decoration: none;
   cursor: pointer;
 
-  // @media only screen and (max-width: 650px) {
-  //   width: 80vw;
-  // }
 }
 
 .delete-button {
@@ -80,9 +85,6 @@
   text-decoration: none;
   cursor: pointer;
 
-  // @media only screen and (max-width: 650px) {
-  //   width: 80vw;
-  // }
 }
 
 .button-container {
@@ -98,14 +100,31 @@
 .delete-button:hover {
   opacity: 1
 }
-@media screen and (max-width: 768px){
-  app, body{
-    width: 100%;
+
+@media screen and (max-width: 768px) {
+
+  app,
+  body,
+  .all--vehicles,
+  .edit-button,
+  .delete-button {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 320px){
-  app, body{
-    width: 100%;
+@media screen and (max-width: 320px) {
+
+  app,
+  body,
+  .all--vehicles,
+  .edit-button,
+  .delete-button {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -4,29 +4,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
- 
-   form {
+
+
+  form {
     width: 100%;
-    input, textarea {
-     border: none;
-     font-size: 16px;
-     margin: 10px;
-     padding:10px;
-     line-height: 1.5;
-     color: #333;
-    }
+
+    input,
     textarea {
-     height: 150px;
+      border: none;
+      font-size: 16px;
+      margin: 10px;
+      padding: 10px;
+      line-height: 1.5;
+      color: #333;
     }
- 
-    // @media screen and(max-width: 799px){
-    //   width: 90vw;
-    // }
-   }
- }
- 
- .vehicle-edit {
+
+    textarea {
+      height: 150px;
+    }
+
+  }
+}
+
+.vehicle-edit {
   padding: 30px 20px;
   background: #f9f9f9;
   max-width: 800px;
@@ -35,27 +35,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- }
+}
 
- .inputWrapper {
+.inputWrapper {
   display: flex;
   flex-direction: column;
- 
-   label {
+
+  label {
     color: #000;
     font-weight: bold;
     padding: 10px 0 5px 10px;
-   }
- }
+  }
+}
 
- @media screen and (max-width: 768px){
-  app, body{
+@media screen and (max-width: 768px) {
+
+  app,
+  body {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 320px){
-  app, body{
+@media screen and (max-width: 320px) {
+
+  app,
+  body {
     width: 100%;
   }
 }

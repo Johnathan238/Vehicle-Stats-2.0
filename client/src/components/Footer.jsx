@@ -5,7 +5,7 @@ import './Shared.scss'
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer--details">
+      <body className="footer--details">
 
         <marquee>
           <div className="footer--details-container sei-developers">
@@ -19,7 +19,7 @@ const Footer = () => {
           Vehicle-Stats-2.0 &copy; 2020 - Vehicle-Stats-2.0 &copy; 2020 - Vehicle-Stats-2.0 &copy; 2020 - Vehicle-Stats-2.0 &copy; 2020</p>
         </marquee>
 
-      </div>
+      </body>
     </footer>
   )
 }

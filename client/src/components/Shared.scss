@@ -1,28 +1,13 @@
 .header {
   background-color: #5295ffe0;
-  height: 50px;
-    width: 100vw;
-    height: 140px;
-  
-  // height: 140px;
-  // grid-template-columns: 25px repeat(7, 1fr) 25px;
-  // grid-template-rows: 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 140px;
+
 }
 
-.h1 {
-  padding-left: 50px;
-  color: #fff;
-  // margin-top: -17px;
-  // padding: 10px;
-}
-
-.Home-Link {
-  margin-left: 20%;
-}
-
-.header--login{
-  margin-right: 20%;
-}
 
 
 .nav {
@@ -32,7 +17,7 @@
 
 .header--links {
   grid-column: 7/ span 2;
-  color: #fff;
+  color: pink;
   align-self: center;
   display: flex;
   justify-self: self-start;
@@ -42,21 +27,27 @@
   }
 }
 
-a{
+.header--login {
+  color: pink;
+  font-size: 20px;
+}
+
+.header--create {
+  color: pink;
+  font-size: 20px;
+}
+
+
+
+a {
   text-decoration: none;
 }
 
 .footer {
   background-color: #242423;
-  height: 150px;
+  height: 20vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
-  // @media only screen and (max-width: 650px) {
-  //   height: auto;
-  //   padding: 10px 0 20px 0;
-  // }
 
 
   &--text {
@@ -66,47 +57,42 @@ a{
   }
 
   &--details {
-    width: 80%;
     display: center;
-    color: #fff;
-
-    // @media only screen and (max-width: 650px) {
-    //   display: flex;
-    //   flex-direction: column;
-    //   padding: 20px 0;
-    // }
+    color: pink;
   }
 }
 
 .footer--details-container {
+  flex: 1;
   grid-column: 1;
-     grid-row: 1 / -1;
+  grid-row: 1 / -1;
   justify-self: center;
-
 }
 
 .sei-developers {
   grid-column: 4 / span 2;
   grid-row: 2 / span 2;
   justify-self: center;
+}
 
-  // @media only screen and (max-width: 650px) {
-  //   margin: 10px 0;
-  // }
+.login--wrapper {
+  flex: 1 1;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Login {
   width: 50vw;
   max-width: 600px;
-  ;
-  height: 35vh;
+  height: 50vh;
   background: #f9f9f9;
   border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 
-  // @media only screen and (max-width: 650px) {
-  //   width: 80vw;
-  // }
+
 }
 
 .login--form {
@@ -149,14 +135,19 @@ a{
     color: #333;
   }
 }
-@media screen and (max-width: 768px){
-  app, body{
+
+@media screen and (max-width: 768px) {
+
+  app,
+  body {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 320px){
-  app, body{
+@media screen and (max-width: 320px) {
+
+  app,
+  body {
     width: 100%;
   }
 }
