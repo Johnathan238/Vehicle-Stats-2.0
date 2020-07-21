@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
-import { deleteVehicles, getVehicles } from '../services/apihelper'
+import { getVehicles } from '../services/apihelper'
 import ShowVehicle from './ShowVehicle'
 export default class DeleteVehicle extends Component {
   state = {
