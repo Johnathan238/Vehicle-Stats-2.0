@@ -56,5 +56,16 @@
    }
  
  }
+ @media screen and (max-width: 768px){
+  app, body{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  app, body{
+    width: 100%;
+  }
+}
 
  

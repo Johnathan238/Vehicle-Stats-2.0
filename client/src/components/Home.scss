@@ -7,13 +7,13 @@ h1 {
   color: pink;
   font-size: 40px;
 
-  @media only screen and (max-width: 650px) {
-    font-size: 30px;
-  }
+  // @media only screen and (max-width: 650px) {
+  //   font-size: 30px;
+  // }
 
-  @media only screen and (max-width: 1115px) {
-    padding-left: unset;
-  }
+  // @media only screen and (max-width: 1115px) {
+  //   padding-left: unset;
+  // }
 }
 
 img {
@@ -22,11 +22,23 @@ img {
   width: 63%;
   justify-content: center;
 
-  @media only screen and (max-width: 650px) {
-    justify-content: center;
-  }
+  // @media only screen and (max-width: 650px) {
+  //   justify-content: center;
+  // }
 
-  @media only screen and (max-width: 1115px) {
-    padding-left: unset;
+  // @media only screen and (max-width: 1115px) {
+  //   padding-left: unset;
+  // }
+}
+
+@media screen and (max-width: 768px){
+  app, body{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  app, body{
+    width: 100%;
   }
 }

@@ -20,9 +20,9 @@
      height: 150px;
     }
  
-    @media screen and(max-width: 799px){
-      width: 90vw;
-    }
+    // @media screen and(max-width: 799px){
+    //   width: 90vw;
+    // }
    }
  }
  
@@ -47,3 +47,15 @@
     padding: 10px 0 5px 10px;
    }
  }
+
+ @media screen and (max-width: 768px){
+  app, body{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  app, body{
+    width: 100%;
+  }
+}
