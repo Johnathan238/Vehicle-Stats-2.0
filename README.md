@@ -19,8 +19,6 @@ Vehicle Stats 1.0 will show new car lovers or motorcycle lovers their favorite v
 - Complete Backend in 1 day
 - Have CRUD in the backend complete
 - Start having components working on day 2
-- Implement Full Authentication
-- Implement Dark mode
 
 <br>
 
