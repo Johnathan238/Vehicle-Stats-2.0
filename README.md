@@ -133,8 +133,30 @@ client/
 
 ## Code Showcase
 
-> 
+> ```
+   <select
+                required
+                onChange={this.handleManufacturerChange}
+              >
+                <option disabled selected>-- Select a Manufacturer --
+                </option>
+                {this.props.manufacturers.map(manufacturer => (
+                  <option value={manufacturer.id}>{manufacturer.name}</option>
+                ))}
+              </select>
+              <select
+                required
+                onChange={this.handleModelChange}
+              >
+                <option disabled selected>-- Select a Model --
+                </option>
+                {this.props.models.map(model => (
+                  <option value={model.id}>{model.name}</option>
+                ))}
+              </select>
+              I'm happy with this code because it was a different way to make a drop-down and it's cool
+  ```
 
 ## Code Issues & Resolutions
 
-> 
+> I had a CRUD issue. The unexpected behavior is I can't edit vehicles when I press the button edit but It was resolved and It's functional
