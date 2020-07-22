@@ -134,17 +134,18 @@ client/
 ## Code Showcase
 
  ```
-          <select
-                required
-                onChange={this.handleManufacturerChange}
-              >
-                <option disabled selected>-- Select a Manufacturer --
-                </option>
-                {this.props.manufacturers.map(manufacturer => (
-                  <option value={manufacturer.id}>{manufacturer.name}</option>
-                ))}
-              </select>
-              I'm happy with this code because it was a different way to make a drop-down and it's cool
+    <select
+      required
+      onChange={this.handleManufacturerChange}
+     >
+    <option disabled selected>-- Select a Manufacturer --
+     </option>
+      {this.props.manufacturers.map(manufacturer => (
+     <option value={manufacturer.id}>{manufacturer.name}</option>
+      ))}
+    </select>
+
+   I'm happy with this code because it was a different way to make a drop-down and it's cool
   ```
 
 ## Code Issues & Resolutions
