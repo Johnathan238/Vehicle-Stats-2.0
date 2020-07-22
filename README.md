@@ -133,8 +133,8 @@ client/
 
 ## Code Showcase
 
-> ```
-   <select
+ ```
+          <select
                 required
                 onChange={this.handleManufacturerChange}
               >
@@ -142,16 +142,6 @@ client/
                 </option>
                 {this.props.manufacturers.map(manufacturer => (
                   <option value={manufacturer.id}>{manufacturer.name}</option>
-                ))}
-              </select>
-              <select
-                required
-                onChange={this.handleModelChange}
-              >
-                <option disabled selected>-- Select a Model --
-                </option>
-                {this.props.models.map(model => (
-                  <option value={model.id}>{model.name}</option>
                 ))}
               </select>
               I'm happy with this code because it was a different way to make a drop-down and it's cool
